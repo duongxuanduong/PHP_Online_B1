@@ -8,9 +8,9 @@ $arr['phone'] = $_POST['phone'];
 $arr['email'] = $_POST['email'];
 $arr['gender'] = $_POST['gender'];
 $arr['address'] = $_POST['address'];
-$_SESSION['student'][$_GET['id']] = $arr;
+$_SESSION['student'][$_POST['msv']] = $arr;
 
-if (isset($_SESSION['student'][$_GET['id']])) {
+if (isset($_SESSION['student'][$_POST['msv']])) {
     setcookie('msg', 'update thành công', time() + 5);
     header('Location: list.php');
 } else {

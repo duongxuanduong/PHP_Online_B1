@@ -18,6 +18,10 @@
 
 <body>
     <div class="container">
+        <?php if (isset($_COOKIE['msg']))
+            echo $_COOKIE['msg'];
+        //session_destroy();
+        ?>
         <h3 align="center">Zent - Education And Technology Group</h3>
         <?php if (!isset($_POST['submit'])) { ?>
             <hr>

@@ -59,7 +59,7 @@
             <td><?= $sanpham['thanhtien'] ?></td>
             <td><?= $sanpham['thoigian'] ?></td>
             <td>
-            <a href="delete.php?id=<?= $sanpham['id'] ?>" onclick="return confirm('Bạn có thật sự muốn xóa 1 sản phẩm?');" type="button" class="btn btn-warning">Xóa</a>
+            <a href="delete.php?id=<?= $sanpham['id'] ?>"  type="button" class="btn btn-warning">Xóa</a>
             <a href="update.php?id=<?= $sanpham['id'] ?>"  type="button" class="btn btn-warning">Thêm</a>
             <a href="delete_all.php?id=<?= $sanpham['id'] ?>" onclick="return confirm('Bạn có thật sự muốn xóa sản phẩm ?');" type="button" class="btn btn-warning">Xóa Hết</a>
             </td>
